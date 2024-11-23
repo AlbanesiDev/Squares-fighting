@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes background-move {
+  0% {
+    background-position: center;
+  }
+  25% {
+    background-position: right center;
+  }
+  50% {
+    background-position: center center;
+  }
+  75% {
+    background-position: left center;
+  }
+  100% {
+    background-position: center center;
+  }
+}
+
+body {
+  animation: background-move 20s infinite linear;
+  background-image: url("/src/assets/cell-arena.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
